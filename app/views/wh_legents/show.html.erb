@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wh code:</strong>
+  <%= @wh_legent.WH_CODE %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @wh_legent.DETAILS %>
+</p>
+
+<%= link_to 'Edit', edit_wh_legent_path(@wh_legent) %> |
+<%= link_to 'Back', wh_legents_path %>

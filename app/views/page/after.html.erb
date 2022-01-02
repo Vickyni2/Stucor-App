@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University</title>
+        <%= stylesheet_link_tag "style" %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header part html start -->
+    <section class="header">
+        <!--nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav-->
+        <div class="text_box">
+            <h1>Anna University</h1>
+            <div class="para">
+                <p>Anna University is a public state university located in Tamil Nadu, India.<br> The main campus is in Chennai. It was originally established on<br> 4 September 1978 and was named after C. N. Annadurai,<br> the former Chief Minister of Tamil Nadu.</p>
+            </div>
+              <%= link_to 'Visit Us To Know More', page_internal_path,class:"hero_btn" %>
+        </div>
+    </section>
+    <!-- header part html end -->
+
+    <!-- course html code start -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>All Engineering Course all over Tamil Nadu<span>( B.E / B.Tech )</span></p>
+        <div class="row">
+            <div class="course_column">
+                <h3>Under Graduate</h3>
+                <p>The candidates who possess the Diploma in Engineering / Technology awarded by the State Board of Technical Education, Tamilnadu or its equivalent are eligible to apply for Lateral entry admission to the third semester of B.E / B.Tech.</p>
+            </div>
+            <div class="course_column">
+                <h3>Post Graduate</h3>
+                <p>Students for admission to the first semester of the Post Graduate Degree Programme shall be required to have passed an appropriate qualifying Degree Examination of Anna University or any examination of any other University.</p>
+            </div>
+        </div>
+    </section>
+    <!-- course html code end -->
+
+    <!-- campus html code end -->
+
+    <!-- facilities html code start -->
+    <section class="facilities course">
+        <h1>See Our Facilities</h1>
+        <p>Enjoy Our Services</p>
+        <div class="row">
+            <div class="ficilities_column">
+                <%= image_tag("lib.jpg", :alt => "lib feed") %>
+                <h3>World Class Library</h3>
+                <p>A library is a collection of materials, books or media that are easily accessible for use and not just for display purposes.</p>
+            </div>
+            <div class="ficilities_column">
+                <%= image_tag("play.jpg", :alt => "play feed") %>
+                <h3>Largest Play Ground</h3>
+                <p>A ground is a direct electrical connection to the earth, a connection to a particular point in an electrical or electronic circuit.</p>
+            </div>
+            <div class="ficilities_column">
+                <%= image_tag("can.jpg", :alt => "can feed") %>
+                <h3>Healthy Food</h3>
+                <p>A canteen is a store that sells food and drink at an institution like a camp, college, or military base. A canteen can also be a small container used to carry water to drink.</p>
+            </div>
+        </div>
+    </section>
+    <!-- facilities html code end-->
+
+    <!-- testimonials html code start -->
+    <section class="testimonials course">
+        <h3>What Our Students Say ? </h3>
+        <p>See Our Students Review It's Positive Minded</p>
+        <div class="row">
+            <div class="testimonial_column">
+                <%= image_tag("per1.jpg", :alt => "per1 feed") %>
+                <div>
+                    <p> It is one of the top universities in the country with a great alumni background. A very impressive campus and of course a very spectacular social life. I, being a student from the central board (CBSE) had a mindset that getting into such a university</p>
+                    <h3>@saravanan</h3>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_column">
+                <%= image_tag("per2.jpg", :alt => "per2 feed") %>
+                <div>
+                    <p>Teaching is good.disadvantage is college is 10 km from the city. Anna university did the counseling process. now the doing .fees is very low when compared with another self-financed college in Madurai</p>
+                    <h3>@Swetha</h3>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials html code end -->
+
+    <!-- call to action html code start -->
+    <section class="call_to_action">
+        <h1>Enroll Our Couses Anywhere</h1>
+        <%= link_to 'Contact us', page_contact_path,class:"hero_btn" %> 
+
+    </section>
+    <!-- call to action html code end -->
+
+
+    <!-- footer html code start -->
+    <section class="footer">
+
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <!-- footer html code end -->
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

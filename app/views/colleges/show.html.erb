@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Clg code:</strong>
+  <%= @college.clg_code %>
+</p>
+
+<p>
+  <strong>Clg name:</strong>
+  <%= @college.clg_name %>
+</p>
+
+<p>
+  <strong>Clg addr:</strong>
+  <%= @college.clg_addr %>
+</p>
+
+<%= link_to 'Edit', edit_college_path(@college) %> |
+<%= link_to 'Back', colleges_path %>

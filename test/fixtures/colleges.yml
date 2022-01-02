@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clg_code: MyString
+  clg_name: MyString
+  clg_addr: MyString
+
+two:
+  clg_code: MyString
+  clg_name: MyString
+  clg_addr: MyString

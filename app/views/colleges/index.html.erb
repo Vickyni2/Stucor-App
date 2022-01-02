@@ -1,0 +1,95 @@
+<p id="notice"><%= notice %></p>
+  
+<%= stylesheet_link_tag "style" %>   
+<header>
+  <section class="campus course">
+    <h1>Colleges</h1>
+    <p>Learn At Your Own Time</p>
+    <div class="row">
+        <div class="campus_column">
+            <%= image_tag("anna.jpg", :alt => "anna feed") %>
+          <div class="layer" >
+            <h3><%= button_to "Chennai", 'https://www.annauniv.edu/' , method: :get , class:'btn btn-danger' %></h3>
+          </div>
+        </div>
+        <div class="campus_column">
+          <%= image_tag("tiru.jpg", :alt => "tiru feed") %>
+            <div class="layer">
+              <h3><%= button_to "Tiruvallur", clg_vel_path, method: :get , class:'btn btn-success' %></h3>
+            </div>
+          </div>
+        <div class="campus_column">
+          <%= image_tag("madurai.jpg", :alt => "madurai feed") %>
+          <div class="layer">
+            <h3><%= button_to "Madirai", clg_mad_path, method: :get , class:'btn btn-warning' %></h3>
+            
+          </div>
+        </div>
+          <div class="campus_column">
+            <%= image_tag("erode.jpg", :alt => "erode feed") %>
+            <div class="layer">
+              <h3><%= button_to "Erode", clg_ero_path, method: :get , class:'btn btn-danger' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("kanya.jpg", :alt => "kanya feed") %>
+            <div class="layer">
+              <h3><%= button_to "Kanyakumari", clg_kanya_path, method: :get , class:'btn btn-success' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("univ1.jpg", :alt => "univ1 feed") %>
+            <div class="layer">
+              <h3><%= button_to "Tanjavur", clg_vel_path, method: :get , class:'btn btn-warning' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("univ1.jpg", :alt => "univ1 feed") %>
+            <div class="layer">
+              <h3><%= button_to "Vellore", clg_vellur_path, method: :get , class:'btn btn-danger' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("univ2.jpg", :alt => "univ2 feed") %>
+            <div class="layer">
+              <h3><%= button_to "Tiruchi", clg_vel_path, method: :get , class:'btn btn-success' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("univ.jpg", :alt => "univ feed") %>
+            <div class="layer">
+              <h3><%= button_to "Theni", clg_vel_path, method: :get , class:'btn btn-warning' %></h3>
+            </div>
+          </div>
+    </div>
+  </section>
+</header>    
+<h1>Colleges</h1>
+
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>College code</th>
+      <th>College name</th>
+      <th>College addr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @colleges.each do |college| %>
+      <tr>
+        <td><%= college.clg_code %></td>
+        <td><%= college.clg_name %></td>
+        <td><%= college.clg_addr %></td>
+        <td><%= link_to 'Show', college %></td>
+        <td><%= link_to 'Edit', edit_college_path(college) %></td>
+        <td><%= link_to 'Destroy', college, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New College', new_college_path %>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University</title>
+    <%= stylesheet_link_tag "style" %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub_header">
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact form code start -->
+    <section class="contact_us">
+        <div class="row">
+            <div class="contact_column">
+                <div>
+                    <i class="fas fa-house-user"></i>           
+                    <span>
+                        <h5>Gognagar Narayangonj</h5>
+                        <p>Ceo Annauniversity,Guindy,chennai</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-volume"></i>
+                    <span>
+                        <h5>+91 9841898671</h5>
+                        <p>Open 24/7</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-square"></i>
+                    <span>
+                        <h5>annuniv.edu@gmail.com</h5>
+                        <p>Replay Within 12 Hours</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact_column">
+                <h3>Get Touch In Email</h3>
+                <form action="" class="comment_form">
+                    Name       : <input type="text"placeholder="Enter Your Name" required><br><br>
+                    Email      : <input type="email" placeholder="Enter Your Email" name="" id=""><br><br>
+                    Subject    : <input type="text" placeholder="Enter Your Query" name="" id=""><br><br>
+                    Message    : <input type="text" placeholder="Type Here..." name="" id=""><br><br>
+                    <button type="submit" class="hero_btn red_btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section><br>
+    <!-- contact form code end -->
+   
+   
+
+    <!-- footer html code start -->
+    <section class="footer">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <!-- footer html code end -->
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

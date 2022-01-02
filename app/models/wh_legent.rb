@@ -1,0 +1,2 @@
+class WhLegent < ApplicationRecord
+end

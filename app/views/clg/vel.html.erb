@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veltech Multitech</title>
+    <%= stylesheet_link_tag "style" %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header part html code end -->
+    
+    <!-- blog page content start -->
+    <section class="blog_content">
+        <b><h1>Veltech Multitech Engineering College</h1></b>
+        <div class="row">
+            <div class="blog_left">
+                <%= image_tag("tiru.jpg", :alt => "tiru feed") %> <br>
+                <br> <p>The college provides Bachelor of Engineering (B.E) in Electrical and Electronics Engineering, Electronics and Communication Engineering, Mechanical Engineering, Computer Science and Engineering, Biomedical Engineering, Robotics and Automation, Courses of Bachelor of Technology (B. Tech)</p> <br>
+                <%= link_to 'Visit Us To Know More', dept_dept_path,class:"btn btn-warning" %>
+              
+                <div class="comment_box">
+                    <h3>Leave A Comment</h3>
+                    <form action="" class="comment_form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Your Email" name="" id="">
+                        <textarea name="" id="" placeholder="Enter Your text" rows="5"></textarea>
+                        <button type="submit" class="hero_btn red_btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog_right">
+                <h3>Post Catagories</h3>
+                <div>
+                    <span>Computer Science Engineering</span>
+                    <span>96</span>
+                </div>
+                <div>
+                    <span>Information Technology</span>
+                    <span>95</span>
+                </div>
+                <div>
+                    <span>Mechanical</span>
+                    <span>75</span>
+                </div>
+                <div>
+                    <span>Civil</span>
+                    <span>60</span>
+                </div>
+                <div>
+                    <span>ECE</span>
+                    <span>95</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog page content end -->
+
+   
+    
+   
+
+    <!-- footer html code start -->
+    <section class="footer">
+        
+        <div class="icons">
+            <p>© 2021 Designed & Developed by Annauniversity</P>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </section>
+    <!-- footer html code end -->
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

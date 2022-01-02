@@ -1,0 +1,36 @@
+<div class="container">   
+<% if !flash[:notice].blank? %>   
+   <div>   
+      <%= flash[:notice] %>   
+   </div>   
+<% end %>   
+  
+<br>   
+  
+<%= link_to "New Time_Table", new_time_t_path %>   
+<br>   
+<br>   
+  
+<table border="3">   
+   <thead>   
+      <tr>   
+         <th>Dept name</th>   
+         <th>Download Link</th>   
+         <th>Action</th>   
+      </tr>   
+   </thead>   
+      
+   <tbody>   
+      <% @time_ts.each do |time_t| %>   
+            
+         <tr>   
+            <td><%= time_t.Department %></td>   
+            <td><%= link_to "Download", time_t.regulation_url %></td>   
+            <td><%= link_to "Delete",  time_t, method: :delete, confirm: "Are you sure you want to delete #{time_t.name}?" %></td>   
+         </tr>   
+            
+      <% end %>   
+   </tbody>   
+      
+</table>   
+</div>  

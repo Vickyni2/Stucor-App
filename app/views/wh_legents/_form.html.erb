@@ -1,0 +1,27 @@
+<%= form_with(model: wh_legent) do |form| %>
+  <% if wh_legent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wh_legent.errors.count, "error") %> prohibited this wh_legent from being saved:</h2>
+
+      <ul>
+        <% wh_legent.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :WH_CODE %>
+    <%= form.text_field :WH_CODE %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DETAILS %>
+    <%= form.text_field :DETAILS %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

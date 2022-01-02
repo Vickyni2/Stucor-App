@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+<h2><b>Anna University “WH” Codes & (WH1/WHRX) | With-Held Results</b> </h2><br><br><br>
+
+<h6><b>What is meant by WH in Anna University Result?</b></h6>
+<p>The <b>WH</b> legend in an <b>Anna University</b> Marksheet represents the fact that the result of that particular<br>
+course has been WITHHELD for certain reasons. The exact reason for which the result has been<br>
+ withheld can be identified via the unique number that is present after WH. You can find those meanings below.</p><br>
+
+<h5>(FREQUENTLY USED ‘WH’ CODES)</h5>
+
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Wh code</th>
+      <th>Details</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wh_legents.each do |wh_legent| %>
+      <tr>
+        <td><%= wh_legent.WH_CODE %></td>
+        <td><%= wh_legent.DETAILS %></td>
+        <td><%= link_to 'Show', wh_legent %></td>
+        <td><%= link_to 'Edit', edit_wh_legent_path(wh_legent) %></td>
+        <td><%= link_to 'Destroy', wh_legent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table><br>
+<h6><b>All list of “WH” Codes & it’s Details:</b></h6>
+<br>
+<div class="para">
+  <ul>
+      <li><b>WHRX :</b> Re-Examination will be conducted</li>
+      <li><b>WH1 :</b> Withheld for suspected Malpractice</li>
+      <li><b>WH2 :</b>Withheld for want of approval of admission / re-admission / <br>
+      transfer from DTE & Director, Student Affairs.</li>
+      <li><b>WH3 :</b> Withheld – Court Case</li>
+      <li><b>WH4 :</b> Waiting clearance from Director (CEP)</li>
+      <li><b>WH5 :</b> Waiting clearance from Director (Student Affairs)</li>
+      <li><b>WH6 :</b> Withheld for want of clarification</li>
+      <li><b>WH7 :</b> Withheld for want of clarification from the Director (AC) about the<br>
+       additional subjects to be written due to the change of regulation</li>
+       <li><b>WHI :</b> Withheld for want of Internal Mark (Mark not provided by the college)</li>
+       <li><b>WHE :</b> Withheld for want of Practical Mark (Mark not provided by the college)</li>
+       <li><b>WHB :</b> Withheld for want of Internal Mark and Practical Mark (Mark not provided by the college)</li>
+       <li><b>WHV :</b> Withheld for want of Viva-Voce Mark</li>
+       <li><b>SE :</b> Sports Exemption</li>
+       <li><b>WD :</b> Withdrawal</li>
+       <li><b>AB :</b> Absent</li>
+       <li><b>SA :</b> Shortage of Attendance</li>
+       <li><b>RA :</b> Re-appearance</li>
+       <li><b>BRK :</b> Break</li>
+       <li><b>UA :</b> Absent</li>
+       <li><b>DIS :</b> Discontinued</li>
+    </ul>
+</div>
+<br>
+
+<!--%= link_to 'New Wh Legent', new_wh_legent_path,class:"btn btn-dark" %-->

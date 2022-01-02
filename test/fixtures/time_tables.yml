@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Department: MyString
+  Regulation-2017: MyString
+  Regulation-2013: MyString
+
+two:
+  Department: MyString
+  Regulation-2017: MyString
+  Regulation-2013: MyString

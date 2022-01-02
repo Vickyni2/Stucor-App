@@ -1,0 +1,27 @@
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 ;
+}
+.location iframe {
+    width: 100%;
+}
+.contact_us{
+    width: 80%;
+    margin: auto;
+}
+.contact_column {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact_column div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact_column .fas {
+    font-size: 20px;
+    margin: 10px;
+    margin-right: 30px;
+}

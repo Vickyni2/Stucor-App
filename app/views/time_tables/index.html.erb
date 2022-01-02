@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<h2><b>Anna University Timetable - UG/PG Exams</b> </h2><br><br><br>
+
+<p>Anna University timetable has been published for UG/PG students. Students are requested to download the below TimeTable and prepare accordingly for the examination and schedule their daily preparation.</p><br>
+
+<h2>Time Tables</h2>
+
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Department</th>
+      <th>Regulation 2017</th>
+      <th>Regulation 2013</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @time_tables.each do |time_table| %>
+      <tr>
+        <td><%= time_table.Department %></td>
+        <td><%= time_table.Regulation_2017 %></td>
+        <td><%= time_table.Regulation_2013 %></td>
+        <!--td><%= link_to 'Show', time_table %></td>
+        <td><%= link_to 'Edit', edit_time_table_path(time_table) %></td>
+        <td><%= link_to 'Destroy', time_table, method: :delete, data: { confirm: 'Are you sure?' } %></td-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--%= link_to 'New Time Table', new_time_table_path %-->

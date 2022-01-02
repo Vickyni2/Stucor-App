@@ -1,0 +1,22 @@
+<br><h1><b>Anna University Results Published</b> </h1><br><br><br>
+
+<p>Anna University Examination Results published for all UG & PG candidates. Thank You.<p>
+
+<br>
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th>Get Results</th>
+      <th><%= link_to "Click here", asset_path("Duplicate_Certi.pdf") %></th>
+    </tr>
+  </thead>
+</table><br>
+
+<% if current_user %>
+ Logged in as <%= current_user.regno %>.
+ <%= link_to 'Log Out', logout_path %>
+<% else %>
+ <%= link_to 'Sign Up', signup_path %> or
+ <%= link_to 'Log In', login_path %>
+<% end %>
+<p id='notice'><%= notice %></p>

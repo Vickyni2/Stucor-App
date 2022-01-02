@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @time_table.Department %>
+</p>
+
+<p>
+  <strong>Regulation-2017:</strong>
+  <%= @time_table.Regulation_2017 %>
+</p>
+
+<p>
+  <strong>Regulation-2013:</strong>
+  <%= @time_table.Regulation_2013 %>
+</p>
+
+<%= link_to 'Edit', edit_time_table_path(@time_table) %> |
+<%= link_to 'Back', time_tables_path %>

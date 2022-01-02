@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
+  <div class="container-fluid">
+    <%= link_to 'StuCor-AU', sessions_welcome_path,class:"navbar-brand"%>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <% if current_user %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              Anna University
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <li> <%= link_to 'WH-Legents', wh_legents_path,class:"dropdown-item" %> </li>
+              <li> <%= link_to 'Internals', page_internal_path,class:"dropdown-item" %>
+              <li> <%= link_to 'Malpractice', page_malpractice_path,class:"dropdown-item" %>
+              <li><hr class="dropdown-divider"></li>
+              <li> <%= link_to 'Duplicate', page_m_certificate_path,class:"dropdown-item" %></li>
+              <li> <%= link_to 'Colleges', colleges_path,class:"dropdown-item" %>
+            </ul>
+          </li>
+          <li class="nav-item">
+            
+            <%= link_to 'Edit Profile', edit_us_er_registration_path,class:"nav-link active"  %> 
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Log Out', logout_path, class:"nav-link active" %> 
+          </li>
+          
+        <% end %>
+        
+      </ul>
+      <!--form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form-->
+    </div>
+  </div>
+</nav>

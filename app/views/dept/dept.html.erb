@@ -1,0 +1,45 @@
+<%= stylesheet_link_tag "style" %>   
+<header>
+  <section class="campus course">
+    <h1>Departments</h1>
+    <p>Learn At Your Own Time</p>
+    <div class="row">
+        <div class="campus_column">
+            <%= image_tag("csc.jpg", :alt => "csc feed") %>
+          <div class="layer" >
+            <h3><%= button_to "CSC", dept_csc_path, method: :get , class:'btn btn-success' %></h3>
+          </div>
+        </div>
+        <div class="campus_column">
+          <%= image_tag("it.jpg", :alt => "it feed") %>
+            <div class="layer">
+              <h3><%= button_to "IT", dept_it_path, method: :get , class:'btn btn-success' %></h3>
+            </div>
+          </div>
+        <div class="campus_column">
+          <%= image_tag("mech.jpg", :alt => "mech feed") %>
+          <div class="layer">
+            <h3><%= button_to "MECHNICAL", dept_mech_path, method: :get , class:'btn btn-warning' %></h3>
+            
+          </div>
+        </div>
+          <div class="campus_column">
+            <%= image_tag("civil.jpg", :alt => "civil feed") %>
+            <div class="layer">
+              <h3><%= button_to "CIVIL", dept_civil_path, method: :get , class:'btn btn-danger' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("ece.jpg", :alt => "ece feed") %>
+            <div class="layer">
+              <h3><%= button_to "ECE", dept_ece_path, method: :get , class:'btn btn-success' %></h3>
+            </div>
+          </div>
+          <div class="campus_column">
+            <%= image_tag("eee.jpg", :alt => "eee feed") %>
+            <div class="layer">
+              <h3><%= button_to "EEE", dept_eee_path, method: :get , class:'btn btn-warning' %></h3>
+            </div>
+          </div>
+    </div>
+  </section>
